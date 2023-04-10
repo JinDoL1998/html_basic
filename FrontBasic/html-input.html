@@ -25,6 +25,7 @@
         <input type="tel" />
         <button type="submit">submit</button>
     </form>
+    <br />
 
     <!--# checkbox, radio type -->
     <!-- checkbox: 0개 이상 선택할 때 사용 -->
@@ -75,6 +76,32 @@
                 </optgroup>
             </select>
         </fieldset>
+        <button type="submit">제출</button>
+    </form>
+    <br />
+
+    <!-- number, range 속성 -->
+    <!-- 숫자를 다루는 속성 -->
+    <!-- number는 직접 입력하거나 스핀으로 조작 -->
+    <!-- range는 드래그로 조작 -->
+
+    <!-- min: 최소값 지정 -->
+    <!-- max: 최대값 지정 -->
+    <!-- step: 증감량 지정 -->
+    <!-- value: 기본값 지정 -->
+    <form>
+        <input type="number" name="number" min="0" max="10" step="2" value="2" />
+        <input type="range" name="range" min="-10" max="10" step="2" value="0" />
+        <button type="submit">제출</button>
+    </form>
+    <br />
+
+    <!-- file, hidden type -->
+    <!-- file 타입은 파일을 입력 할 때 사용 -->
+    <!-- hidden 타입은 화면에 보여주지 않고자 할 때 사용 -->
+    <form enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <input type="hidden" name="hidden" value="hidden-value"/>
         <button type="submit">제출</button>
     </form>
 </body>
