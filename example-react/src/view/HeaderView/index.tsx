@@ -1,7 +1,19 @@
-import React from 'react'
-
-export default function index() {
+export default function Header() {
   return (
-    <div>index</div>
+    <div className="header">
+      <div className="header-inner">
+        <a href="https://naver.com" className="logo">
+          <h1 className="blind">NAVER</h1>
+        </a>
+        <div className="lang">
+          <select className="select">
+            <option>한국어</option>
+            <option>English</option>
+            <option>日本語</option>
+            <option>中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
   )
 }
